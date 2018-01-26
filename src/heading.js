@@ -89,14 +89,12 @@ export default class Heading extends Plugin {
 			  const index = areActive.findIndex( value => value );
 
 			  // If none of the commands is active, display default title.
-              let title = defaultTitle;
-              if (options[index]) {
-                if (options[index].viewElement) {
-                  title = options[index].viewElement.toUpperCase();
-                } else {
-                  title = "P";
-                }
-              }
+			  let title = defaultTitle;
+			  if (options[index]) {
+				if (options[index].viewElement) {
+				  title = options[index].viewElement.toUpperCase();
+				}
+			  }
 			  return title;
 			}
 		);
